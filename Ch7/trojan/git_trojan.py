@@ -29,8 +29,8 @@ task_queue = Queue.Queue()
 # for use by other functions. (auth process needs to be obfuscated
 # as much as possible in a real world scenario)
 def connect_to_github():
-    gh = login(username="NCols", password="Aaplmsft--0101")
-    repo = gh.repository("NCols","chapter7")
+    gh = login(username="username", password="password")
+    repo = gh.repository("username","chapter7")
     branch = repo.branch("master")
 
     return gh,repo,branch
